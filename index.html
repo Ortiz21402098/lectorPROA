@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROA Scanner</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <img class="logo" src="descarga.jpeg" alt="Logo">
+        <h1>Scanner Proa</h1>
+    </div>
+    
+    <div class="container">
+        <h2>Proyecto Laboratorio</h2>
+        <form id="myForm">
+            <label for="docente">Docente:</label>
+            <input type="text" id="docente" required>
+            <br><br>
+            <label for="curso">Curso:</label>
+            <input type="text" id="curso" required>
+            <br><br>
+            <label for="compus">Compus:</label>
+            <input type="text" id="compus" required>
+            <br><br>
+            <label for="horaingreso">Hora Ingreso</label>
+            <input type="text" id="horaingreso" required>
+            <br><br>
+            <label for="estado">Estado:</label>
+            <input type="text" id="estado" required>
+            <br><br>
+            <label for="observaciones">Observaciones:</label>
+            <input type="text" id="observaciones" required>
+            <br><br>
+            <button type="button" id="agregar">Agregar a la tabla</button>
+        </form>
+    </div>
+    
+    <div class="container">
+        <h2>Datos ingresados</h2>
+        <table id="dataTable">
+            <thead>
+                <tr>
+                    <th>Docente</th>
+                    <th>Curso</th>
+                    <th>Compus</th>
+                    <th>Hora ingreso</th>
+                    <th>Estado</th>
+                    <th>Observaciones</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+            </tbody>
+        </table>
+    </div>
+    <button id="guardarExcel">Guardar en Excel</button>
+    <script src="java.js"></script>
+</body>
+</html>
+
